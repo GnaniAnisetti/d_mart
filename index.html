@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMart Store - Home</title>
+
+
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        table{
+            background-color: white;
+            border-collapse: collapse;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        h2{
+            margin: 0;
+            padding: 10px;
+        }
+
+        h3{
+            color: green;
+        }
+    </style>
+</head>
+</head>
+<body>
+
+<!-- HEADER -->
+<table width="100%" border="1">
+    <tr>
+        <td width="15%" align="center">
+            <img src="dmart_logo.jpg" alt="DMart Logo" width="80">
+        </td>
+        <td width="20%" align="center">
+            <b>DMart</b>
+        </td>
+        <td width="35%" align="center">
+            <h2>DMart Super Market</h2>
+        </td>
+        <td width="30%" align="center"> 
+            <a href="products.html">Products</a> |
+            <a href="contact.html">Contact</a>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- BANNER IMAGE -->
+<table width="100%" border="1">
+    <tr>
+        <td align="center">
+                <img class="slide" src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F1aug24-crsl-kitchenmela.jpg&w=1920&q=75" width="1000">
+                <img class="slide" src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F1oct24-crsl-dg-mum.jpg&w=1920&q=75" width="1000">
+                <img class="slide" src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F11mar26-mmr-new.jpg&w=1920&q=75" width="1000">
+            <p><b>Welcome to DMart – Affordable & Quality Products</b></p>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- MAIN CONTENT -->
+<table width="100%" border="1">
+    <tr>
+
+        <!-- LEFT COLUMN -->
+        <td width="35%" valign="top">
+
+            <h3>About DMart</h3>
+            <p>
+                DMart is a popular retail store that offers a wide range of
+                daily essentials at affordable prices under one roof.
+            </p>
+
+            <hr>
+
+            <h3>Product Categories</h3>
+            <ul>
+                <li>Groceries</li>
+                <li>Household Items</li>
+                <li>Personal Care</li>
+                <li>Clothing</li>
+                <li>Kitchen Essentials</li>
+            </ul>
+
+        </td>
+
+        <!-- RIGHT COLUMN -->
+        <td width="65%" valign="top">
+
+            <h3>Welcome</h3>
+            <p>
+                DMart is your trusted store for groceries, household items and more.
+                Explore our products and contact us anytime.
+            </p>
+
+            <hr>
+
+            <h3>Why DMart?</h3>
+            <ul>
+                <li>Low prices everyday</li>
+                <li>Quality products</li>
+                <li>Wide range of categories</li>
+                <li>Customer satisfaction</li>
+            </ul>
+
+        </td>
+
+    </tr>
+</table>
+
+<br>
+
+<!-- FOOTER -->
+<table width="100%" border="1">
+    <tr>
+        <td align="center">
+            DMart Stores | Quality Products | Low Prices | Customer Satisfaction
+        </td>
+    </tr>
+</table>
+<script>
+
+let index = 0;
+let slides = document.getElementsByClassName("slide");
+
+function slider(){
+
+for(let i=0;i<slides.length;i++){
+slides[i].style.display="none";
+}
+
+index++;
+
+if(index > slides.length){
+index = 1;
+}
+
+slides[index-1].style.display="block";
+
+setTimeout(slider,2000);
+
+}
+
+slider();
+
+</script>
+</body>
+</html>
